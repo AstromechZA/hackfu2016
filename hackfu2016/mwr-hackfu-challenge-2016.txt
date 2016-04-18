@@ -1,0 +1,57 @@
+Prologue
+--------
+The one useful piece of advice your father ever gave you, between staring at a crumbling wall, strung out on Dred and the manic episodes when his stash would run out, was this:
+
+“Never look a bluzzard in the eye. And remember, its eye is the mushy-looking thing on the end of its third talon.”
+
+The memory is especially poignant because he followed this pearl of wisdom with a vicious beating, and then kicked you out of the shack to spend the night in the irradiated wastes.
+
+But good advice is good advice, and it was with this in mind that you hid behind the rubble of a ruined storefront, huddled in a ball, with your eyes shut tight, listening to the shrill cries of the pack of bluzzards circling above.
+
+They don’t seem to notice you. That’s good. You’ve seen what a challenged bluzzard could do to someone like you. Poor Sifinger.
+
+After what feels like an eternity, the pack of bluzzards get bored of the area and go off to find food elsewhere. You wait until you can no longer hear them, and then cautiously poke your head out from your hiding place. A dusty wind blows across the barren wasteland, and you pick yourself up.
+
+You go to the place you left your trolley. It’s loaded up with your provisions, and the results of this latest scavenging session. Today’s haul is a good one, even though you almost got eviscerated by bluzzards at one point, and had a close call with doomlizards earlier on. You manage to get your hands on:
+
+* Twenty cans of preserved food (delicious beans, the greatest delicacy of your ancestors’ highly advanced civilisation)
+* A rusty-but-still-whole robot arm (worth a few bucks from technofetishists too timid to do their own scavenging)
+* A flash disk inscribed with a faded picture of what might once have been a robed figure wielding a katana (this one is just intriguing)
+
+So you didn’t get killed by mutants, you haven’t thrown up from radiation sickness in a couple of days, and tonight you shall dine like royalty! Today was a very good day.
+
+---
+
+Hours later, you sit in the darkness of your shack, full of beans and curiosity about the flash disk you found. You huddle under a blanket and turn on your battered laptop – one of the first things you ever picked up in a scavenging run and your most treasured possession.
+
+After a day of fighting for survival in an ever increasingly hostile world, you like to unwind by fiddling with this delightful box of lights. The ancestors created some very sophisticated, if pretty useless toys. Maybe that’s how they destroyed themselves.
+
+You insert the flash disk into the laptop’s working USB port, and open up some very intriguing files...
+
+=======================
+HACKFU CHALLENGE - 2016
+=======================
+
+Welcome to the HackFu Challenge for 2016. You are about to embark on a mysterious quest in which you will use your hackery skills to follow the clues and complete all the challenges!
+
+All challenges are locked using AES-256-CBC. The encrypted version of the content is base64 encoded. You can decrypt them using openssl. You can do the challenges in any order you like, but the story makes much more sense in order of the challenges! Each challenge has a specific codename that you need to send back to us, so that we can keep track of your progress. In most cases, instructions will be given to you only after solving the challenge. Once all the challenges have been completed and you make an important final important choice, an appropriate epilogue will be sent to you in order to complete the story.
+
+Just as a quick exercise, the rest of the introduction is encrypted in the block below. The passphrase is (without the quotes): "hackfuchallenge2016". All passphrases you will encounter during this challenge are all in lower case with no punctuation and no spaces.
+
+U2FsdGVkX1/G1KRji4T1etFTkU0kA2DGNUoK3d/c+UeL1xOJhoa6WzA4NU78TwbF
+/9Tofrgrk06+5D816A5EkRWGEPNfnu/kWpZPt4GgspQQ4qAsFu6IJ/Y3Bab+YARM
+nzWKuSgOTJGUHhnmhHG4wk7yaBldp8fPHQ+MrBFAa3H3fpOOz6WxFVG1dGmJjoII
+TVI94nX687oGVgktnRrVVCzILxPVISe9t4R/aiXAN2bku3+c63/InWMPR3j0181k
+AabAszX8UWGGQS6QKnlE9VhMl9ZYJ3WdrfA/cVD9SYKoLEhsABNQpapR8eRcbkdV
+2CKt9cMHIBFgMN4yXRAcyrjD0H3KuoP9Fbg0HMAcBDfBm/mtz9dX98GlLI4jy4sF
+XZf7dwRKbqMXrlz8MwckuW45cxI6bsZdni62RJsbB0LaBzoBR/IjYT7YPkytxZbu
+WBFJYI+oZOOojeWc1tSL3eSSMYTg/evoKaJB8j/HwD2xBw/+bTqAGPwaqfBALyo9
+rD4LmpNjugiXWR2hfRj3m8ZrVkqGHCSc9t/RZWJTPdI6cxw7a46eLlJT0jjpCquD
+ypflzJUzMzH0vl2LP1IY05FRdJ+ybYssiAB3rPc+o507Lh+VH07rTZOUzj0wDHxS
+NQoO+jX3GiNBc+AfYYGhUbeuaKMENmVg5NH00PQm2YsX1pIbd9Wh/dBLeoA6fMcj
+G+SlJzQdoLKfCAS8MkLny1D3Glg0xCF8RQqOWRtFPYhv65D/0O+Vr+WN89x4mdA2
+3E1h3ywKgSD/WUlVzyjftfAxcNi5x1yvCaPgK9A+HYBi6TWpp5XvW/zdV4wlPHog
+07Gz8eRfH0UZSD3SbA6ykWfVZ8xWM3NABZb1qiZJ+Zu8cUXPmI0gblM7SRZLwCrI
+b9q8J2i01jlMvxZLS6Ua6wP560FqQxaTII6OE4KRoTbQ7k3+DDDFNW/qoAGzxK1c
+DJKKzTcqVRD+vZWTbS6paytmAwl0ikViZfqVXgJZTUaB3J4jrddIFtQ2B+6hWvv2
+SUOm1L6o1tkZ17iH105IXCe6BFNcTBe/i8rcSQkS7c2pZDY4AWmf32DaP7hhmg6z

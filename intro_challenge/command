@@ -1,0 +1,1 @@
+openssl aes-256-cbc -d -a -in ciphertext.base64 -out plaintext -pass pass:hackfuchallenge2016

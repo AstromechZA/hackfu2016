@@ -1,0 +1,50 @@
+“It was very rude of you to skip out on me like you did,” Milford Buchanan says. “And after I did so much for you.”
+
+You say nothing, but lower into a defensive stance.
+
+“Still,” Milford continues, “I’m sure you had your reasons. Reasons for not even saying so much as a goodbye. Reasons for taking half my pantry with you. Reasons for… but I digress. In my magnanimity, I will let bygones be bygones for the sake of the immense importance of the task at hand.”
+
+“What do you need me for this time?” you say through gritted teeth.
+
+Milford’s pig-like eyes twinkle devilishly. “It’s not about what I need. It’s about whether you and the rest of the denizens of this blasted hellscape would like to wake up tomorrow morning with the remainder of your limbs intact.”
+
+“What are you getting at?”
+
+Milford brandishes a flash drive, similar in appearance to the one you found at the beginning of this long adventure. “MM and I used to be the greatest friends and allies. We had our different opinions about what was best for humanity’s future, and about the most practical avenues for betterment of the world, but we were basically working towards the same goal.”
+
+Milford pauses dramatically. “Or so I thought. As it turns out, MM doesn’t want what’s best for humanity at all. He wants to murder everyone.”
+
+You’re momentarily shocked. Could you have been helping a mass-murderer achieve destruction of everything you’ve ever known this whole time? Is that what this has all been about?
+
+But on the other hand, should you believe Milford? There’s something not entirely honest about his face.
+
+“Myself and MM, we both want to reduce suffering,” Milford continues, ignoring any conflict your expression may be betraying. “I in my small way, with the Garden of Eden Enclave, and MM in a large, world-scale way. It’s just that he’s lately decided that the only way to reduce suffering at such a scale is to make it so that there is no-one left to suffer.”
+
+“What is he planning?” you ask, slightly incredulous at the idea.
+
+“MM’s great advantage is that such a devastation has happened before, in the great event that brought about the end of the old world. I don’t know what silly superstitious stories your people tell about it, but this event involved large numbers of what were called ‘nuclear’ bombs, bombarding the Earth’s surface.”
+
+You’ve heard a number of similar stories.
+
+Milford continues, “MM has found the remains of the great armouries storing these bombs. All of them are still very much intact, and have revealed a terrible secret: the destruction of the old world was accomplished with only a small fraction of the available arsenal. The armaments stored below this building alone dwarf the amount used then.”
+
+Despite your attempts to remain skeptical, the grave and haunting quality of Milford’s words cause the blood to drain from your face.
+
+“MM plans to unleash all this and more upon the entire world, and end human suffering in a final baptism of fire.”
+
+“Then why the challenges? What did he want me for?”
+
+Milford laughs at this. “Oh, the challenges! Yes, yes, I’d completely forgotten about those! MM made those challenges long ago, as part of some less drastic but now abandoned plan. I’ll admit that I myself only recently became privy to this newest of his plans, but rest assured, all of those challenges are completely worthless now!”
+
+“What about the kidnapped boy?”
+
+“I don’t know what you’re talking about, but MM has spies and low-level accomplices everywhere. Whoever you met, whoever they said they were and whatever they told you in connection with any of these challenges was most likely lying. I know – I was one of them.”
+
+You feel a bit deflated at this.
+
+“There is one challenge that does matter.” Milford approaches you and places the flashdisk in your hands. “This flashdisk contains the final password necessary to stop his machines of destruction. I stole it away from him at great personal risk, but have been unable to find the password in the strange files stored on it. I’ve always been hopeless with these fiddly computer things, you know.”
+
+In a completely automatic motion, you slide out your battered laptop and plug the flashdisk in.
+
+
+Challenge: Analyse the decrypt binary and get the key from the input file.

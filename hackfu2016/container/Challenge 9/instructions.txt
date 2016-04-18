@@ -1,0 +1,49 @@
+There’s a message is written in large, sloppy red letters on a crumbling wall at the edge of the settlement of Uten. You ask a passerby about it, and are told that it gets washed off and written anew each morning, but no one knows who’s doing it or when.
+
+Today, the message reads:
+
+“Night is approaching and our game has been played, solve it as quick as you can and come to my aid #ignite”
+
+You stare at it for a while, perplexed. You’re not sure how to pronounce the “#” or what it means – the older people call it the “lost letter”, a symbol of the great gaps in humanity’s knowledge following the apocalypse. It litters late-period old world texts, hinting at the great and unknowable enlightenments of the gods who walked the earth in those former times.
+
+You turn around and are about to leave the site when you see a hunched figure out of the corner of your eye, reading the message. Her eyes are brimming with tears.
+
+You ask the woman why she’s crying.
+
+“These messages…” she whispers. “Th-they are about my son.”
+
+“What do you mean?” you ask. “Is your son the one putting them up?”
+
+“No, no,” she replies. “They took him. Now they put these messages up every day. They do it to taunt me.”
+
+You don’t understand, and your facial expression makes that quite clear.
+
+“They truly are cruel,” the mother continues. “They say there’s a secret hidden in these messages. They say the messages tell where my son is. Every day they move my son to a new place, and every day they put up a new message. If I can decode the message and come to where my son is, they say, then they will give him back to me.”
+
+You look at the message for a few moments. “But I don’t see how this message could give the location of anything.”
+
+“Such is the depth of their cruelty. They steal everything you have, and then they give you false hope. They present the meaningless as meaningful.” The woman exhales deeply and physically slumps down. “I’m going mad trying to solve this. My son… is probably dead already. This world has already taken my last three children.”
+
+You look at the mother’s dead eyes. You can’t imagine the depths of her pain. Your own mother… you can’t remember her. Your father was always silent on the subject, would always change the subject to one of his stories about marauders or giant birds.
+
+You look back at the message. You know it’s not meaningless. You know that this is MM’s latest challenge, the one the priestess of the Sacred Journey to the Heavens told you about. But you didn’t realise MM and whoever he’s working with would go this far.
+
+“I’ll help,” you say to the woman, putting on your most resolute look. “Tell me what the other messages were.”
+
+Maybe MM isn’t the one who kidnapped the child. Maybe he just has inside information on the kidnappers, and this is his roundabout way of helping this poor woman. But then, how much do you really know about MM?
+
+The woman hands you a crumpled piece of paper. A series of messages are written on it, with dates and locations next to each. The current message appears at the bottom.
+
+“And… I also found this near the wall,” the woman continues, handing you a second, smaller piece of paper. This one appears to be mostly burnt up, but you can see some fragments scrawled on it in a nigh-illegible handwriting.
+
+The only information you could recover from the page is:
+
+#exile = 27; #wicker = -23; #canine = 28
+
+y = b1*x1 + b2*x2 + c
+
+You think you saw a slight spark in the woman’s eye as she handed you the second paper. But you’re not sure.
+
+
+Challenge: Analyse the data and calculate the next location.
+
