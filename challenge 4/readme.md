@@ -45,13 +45,15 @@ https://en.wikipedia.org/wiki/Hellschreiber
 sounds the same! definitely generated with the same fldigi tool.
 
 1. open wav in VLC
-2. Install the hellschreiber Android app 
+2. Install the hellschreiber Android app
 3. Listen to the wav file
 4. Profit! "BRINGLIFETOTHEWASTELAND"
 5. This decrypted the zip file and revealed audio2.wav
-6. Open audio 2 
+6. Open audio 2
 7. Reverse, increase speed (Backmasking / Speed in exif tags)
-8. Message says: "You have solved the 4th challenge, proceed to Eden to face the 5th challenge"
+8. Message says: "You have solved the fourth challenge, proceed to Eden to face the fifth challenge"
 
 Very confused, still don't have password that decrypts the encrypted solution
 Emailed MWR, they say I have the password, but it's not working?
+
+Turns out password is: "youhavesolvedthefourthchallengeproceedtoedentofacethefifthchallenge"
