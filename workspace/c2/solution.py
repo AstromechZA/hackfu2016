@@ -1,11 +1,11 @@
 import os
 from PIL import Image
 
-FILES = os.path.join(os.path.dirname(__file__), '..', 'hackfu2016', 'container', 'Challenge 2')
+FILES = os.path.join(os.path.dirname(__file__))
 
 
 def main():
-    img = Image.open(os.path.join(FILES, 'image')).copy()
+    img = Image.open(os.path.join(FILES, 'image.bmp')).copy()
 
     pixels = img.load()
 
@@ -16,7 +16,9 @@ def main():
             d = imagedata[y * height + x]
             pixels[x, y] = (1 - (d & 1)) * 255
 
+    img.save(os.path.join(FILES, 'image-revealed.bmp'))
     img.show()
+
 
 if __name__ == '__main__':
     main()
