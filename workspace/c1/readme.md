@@ -137,3 +137,10 @@ second number could be letter of that word
 hard to do, since there is no schema of what to do about weird punctuation, and where to start, can't just split on whitespace.
 Also there are some long word requirements.
 
+## Tried a variety of things
+
+- first tried (line, character) with skipping blank lines and skipping spaces
+- tested one off errors
+- nothing gave reasonable passphrases
+
+- need to test words since its quite possibly a very long passphrase

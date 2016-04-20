@@ -55,11 +55,9 @@ func IsEmpty(l string) bool {
     return false
 }
 
-var badCharRe = regexp.MustCompile("[^a-z0-9]")
+var badCharRe = regexp.MustCompile("[^a-z]")
 
-func FetchCharEntry(lines *[]string, entry *LetterEntry) (string, error) {
-    xx := entry.x - 1
-    yy := entry.y - 1
+func FetchCharEntry(lines *[]string, xx int, yy int) (string, error) {
     if len(*lines) <= xx {
         return "", errors.New("Not enough lines")
     }
@@ -74,28 +72,10 @@ func FetchCharEntry(lines *[]string, entry *LetterEntry) (string, error) {
     return string(line[yy]), nil
 }
 
-func FetchWordEntry(lines *[]string, entry *LetterEntry) (string, error) {
-
-    if len(*lines) <= entry.x {
-        return "", errors.New("Not enough lines")
-    }
-
-    line := (*lines)[entry.x]
-    line = strings.TrimSpace(line)
-    words := strings.Split(line, " ")
-    if len(words) <= entry.y {
-        return "", errors.New("Not enough words")
-    }
-
-    return words[entry.y], nil
-}
-
 func main() {
 
     thisAbsPath, _ := filepath.Abs(os.Args[0])
-    bookDir := filepath.Join(thisAbsPath, "..", "..", "..", "hackfu2016/container/Challenge 1/Books/*")
-
-    fmt.Println(bookDir)
+    bookDir := filepath.Join(thisAbsPath, "..", "Books/*")
 
     files, err := filepath.Glob(bookDir)
     if err != nil {
@@ -103,7 +83,6 @@ func main() {
     }
 
     for _, f := range files {
-        fmt.Println(f)
         lines := GetLines(f)
         filteredLines := FilterLines(lines, IsEmpty)
 
@@ -112,7 +91,7 @@ func main() {
         var err error
         var v string
         for _, e := range LetterEntries {
-            v, err = FetchCharEntry(filteredLines, &e)
+            v, err = FetchCharEntry(filteredLines, e.x - 1, e.y - 1)
             if err == nil {
                 password = password + v
             } else {
@@ -120,9 +99,8 @@ func main() {
             }
         }
         if err == nil {
+            fmt.Println(f)
             fmt.Println("'", password, "'")
-        } else {
-            fmt.Println(err.Error())
         }
     }
 
