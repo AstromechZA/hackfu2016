@@ -73,9 +73,7 @@ func GetBestKeySizes(cipherText *[]byte, bottom int, top int, tf func(a byte, b 
     for i := bottom; i <= top; i++ {
         scores[i - bottom] = KeySizeScore{i, GetKeySizeScore(cipherText, i, tf)}
     }
-
     sort.Sort(ByScore(scores))
-
     return &scores
 }
 
