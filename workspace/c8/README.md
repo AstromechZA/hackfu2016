@@ -29,6 +29,20 @@ DC112_2015-04-01.jpg - Christ the Redeemer (statue) - 22°57′7″S 43°12′38
 DC115_2015-11-01.jpg - Great Wall of China - 40.67693°N 117.23193°E
 DC117_2015-10-01.jpg - Suomenlinna - 60°08′37″N 24°59′04″E
 
+DC109_2015-01-01.jpg - Morocco
+DC105_2015-02-01.jpg - Mali
+DC097_2015-03-01.jpg - Nigeria
+DC112_2015-04-01.jpg - Brazil
+DC108_2015-05-01.jpg - Mexico
+DC097_2015-06-01.jpg - Unitest States
+DC099_2015-07-01.jpg - Ireland
+DC105_2015-08-01.jpg - United Kingdom / England
+DC100_2015-09-01.jpg - Germany
+DC117_2015-10-01.jpg - Finland
+DC115_2015-11-01.jpg - China
+DC046_2015-12-01.jpg - Japan
+
+
 Locations plotted here: https://www.google.com/maps/d/edit?mid=zNzFyWsZmvRg.kVvogcQ56T5U&usp=sharing
 But no real shape or anything visible. Locations aren't related to MWR.
 
@@ -68,3 +82,10 @@ found phrase 'Well Done, the second answer lies within!' -> 'welldonethesecondan
 found phrase 'youcannotspellscorchedearthwithoutdeath'
 
 but could not decrypt anything with it...
+
+## Gonna try brute force crack
+
+https://hashcat.net/forum/thread-3665.html
+http://pentestcorner.com/cracking-microsoft-office-97-03-2007-2010-2013-password-hashes-with-hashcat/
+
+need a word list?
