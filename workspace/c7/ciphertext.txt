@@ -3,11 +3,46 @@ Ciphertext: "eFjdlwKgeFlscbApnQEsny3tnye0frxnlrQ5vliW3Yx=5Al●S1nT4obQHql●Ozl
 Hint:
 Cipher table structure has been modified. Example set up of decrypt/encrypt table using example key - glassfish
 
-example table:  G L A S F I H B
-		C D E J K M N O
-		P Q R T U V W X
-		Y Z g l a s f i
-		h b c d e j k m
-		n o p q r t u v
-		w x y z 0 1 2 3
-		4 5 6 7 8 9 = ●
+example table:
+G L A S F I H B
+C D E J K M N O
+P Q R T U V W X
+Y Z g l a s f i
+h b c d e j k m
+n o p q r t u v
+w x y z 0 1 2 3
+4 5 6 7 8 9 = ●
+
+maybe?
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.
+miaplcdus.ABCDEFGHIJKLMNOPQRSTUVWXYZbefghjknoqrtvwxyz0123456789
+
+naah
+
+AH its a PLAY FAIR cipher thats what its called...
+
+M I A P L C D U
+S B E F G H J K
+N O Q R T V W X
+Y Z m i a p l c
+d u s b e f g h
+j k n o q r t v
+w x y z 0 1 2 3
+4 5 6 7 8 9 = ●
+
+eF jd lw Kg eF ls cb Ap nQ Es ny 3t ny e0 fr xn lr Q5 vl iW 3Y x= 5A l● S1 nT 4o bQ Hq l● Oz l● Kq eG 52 52
+
+M I A P L C D U
+S B E F G H J K
+N O Q R T V W X
+Y Z m i a p l c
+d u s b e f g h
+j k n o q r t v
+w x y z 0 1 2 3
+4 5 6 7 8 9 = ●
+
+
+eF jd lw Kg eF ls cb Ap nQ Es ny 3t ny e0 fr xn lr Q5 vl iW 3Y x= 5A l● S1 nT 4o bQ Hq l● Oz l● Kq eG 52 52
+
+
