@@ -48,13 +48,6 @@ func FilterLines(lines *[]string, f func(string) bool) *[]string {
     return &ols
 }
 
-func IsEmpty(l string) bool {
-    if len(strings.TrimSpace(l)) > 0 {
-        return true
-    }
-    return false
-}
-
 var badCharRe = regexp.MustCompile("[^a-zA-Z ]")
 var multiSpaceRe = regexp.MustCompile("\\s+")
 
@@ -87,16 +80,14 @@ func main() {
 
     for _, f := range files {
         lines := GetLines(f)
-        filteredLines := FilterLines(lines, IsEmpty)
-
         password := ""
 
         var err error
         var v string
         for _, e := range LetterEntries {
-            v, err = FetchWordEntry(filteredLines, e.x - 1, e.y - 1)
+            v, err = FetchWordEntry(lines, e.x - 1, e.y - 1)
             if err == nil {
-                password = password + v + " "
+                password = password + v
             } else {
                 break
             }
@@ -106,5 +97,4 @@ func main() {
             fmt.Println("'", password, "'")
         }
     }
-
 }
