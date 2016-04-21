@@ -188,7 +188,7 @@ func CacheLetterPositions(grid *[][]string) *map[string]Pair {
 func main() {
 
     grid := PlayFairGrid{}
-    grid.Build("glassfish")
+    grid.Build("miaplacidus●")
     grid.Print()
 
     cipherText := "eFjdlwKgeFlscbApnQEsny3tnye0frxnlrQ5vliW3Yx=5Al●S1nT4obQHql●Ozl●KqeG5252"

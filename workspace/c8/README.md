@@ -74,18 +74,19 @@ Robur Carolinum [Halley devised a new constellation which he called Robur
 Carolinum (Charles’ Oak) after the tree which had hidden the king, Charles II,
 but that constellation died out after 50 years].
 
-## Doc file
+Hair brained idea: need to find the longitude of each place? sextant is used for finding longitude?
 
-opened doc file as bytes
+DC046_2015-12-01.jpg - 35.65861   ~ 36
+DC097_2015-03-01.jpg - 9.06083    ~ 9
+DC097_2015-06-01.jpg - 30.27472   ~ 30
+DC099_2015-07-01.jpg - 52.97188   ~ 53
+DC100_2015-09-01.jpg - 52.51627   ~ 53
+DC105_2015-02-01.jpg - 16.77138   ~ 18
+DC105_2015-08-01.jpg - 53.46305   ~ 53
+DC108_2015-05-01.jpg - 19.43563   ~ 19
+DC109_2015-01-01.jpg - 33.60826   ~ 34
+DC112_2015-04-01.jpg - -22.95194  ~ -23
+DC115_2015-11-01.jpg - 40.67693   ~ 41
+DC117_2015-10-01.jpg - 60.14361   ~ 60
 
-found phrase 'Well Done, the second answer lies within!' -> 'welldonethesecondanswerlieswithin'
-found phrase 'youcannotspellscorchedearthwithoutdeath'
-
-but could not decrypt anything with it...
-
-## Gonna try brute force crack
-
-https://hashcat.net/forum/thread-3665.html
-http://pentestcorner.com/cracking-microsoft-office-97-03-2007-2010-2013-password-hashes-with-hashcat/
-
-need a word list?
+range == -23 -> 60 == 83

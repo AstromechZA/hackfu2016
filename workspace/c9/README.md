@@ -1,3 +1,5 @@
+
+            writer      b1          b2          c
 2015-08-25  #canine     24.238149   26.942855   30.280603   If truly you seek to find your dear missing child, first calculate the fixed coefficients we've compiled
 2015-08-28  #vendetta                           -24.454848  We didn't want to do it, but we had no real choice, It was the only way, so sayeth our inner voice
 2015-09-03  #wicker     30.280603   -24.454848  -22.705681  Follow these clues and do not be distraught, use only a little bit of thought
@@ -20,3 +22,13 @@
 2015-12-27  #exile                              29.448267   You are getting really, really near, forget the month and even the year
 2016-01-09  #vendetta   28.73662    29.448267   ?           Others haven't found me, that's sad, you wouldn't think it, with the many clues they had
 2016-01-16  #ignite                             ?           Night is approaching and our game has been played, solve it as quick as you can and come to my aid
+
+#exile = 27;
+#wicker = -23;
+#canine = 28
+
+y = b1*x1 + b2*x2 + c
+
+-27; 25; 27; -23; 28 added -> 30
+
+"forget the month and even the year" is the y value the day?

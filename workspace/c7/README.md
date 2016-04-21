@@ -19,3 +19,5 @@ cracked it super quickly with a word list: 'salinas'
 which revealed: 'sometimesthepuzzleisitsownreward'
 
 which opens the archive!
+
+looks like there may be another encrypted section inside the doc, saw evidence of it in microsoft word and when I saved it to xml
