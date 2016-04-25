@@ -15,8 +15,8 @@ w x y z 0 1 2 3
 
 maybe?
 
-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.
-miaplcdus.ABCDEFGHIJKLMNOPQRSTUVWXYZbefghjknoqrtvwxyz0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=.
+MIAPLCDUSBEFGHJKNOQRTVWXYZmiaplcdus.befghjknoqrtvwxyz0123456789=
 
 naah
 
@@ -45,3 +45,11 @@ w x y z 0 1 2 3
 eF jd lw Kg eF ls cb Ap nQ Es ny 3t ny e0 fr xn lr Q5 vl iW 3Y x= 5A l● S1 nT 4o bQ Hq l● Oz l● Kq eG 52 52
 
 
+MIAPLCDU
+SBEFGHJK
+NOQRTVWX
+YZmiaplc
+dus.befg
+hjknoqrt
+vwxyz012
+3456789=

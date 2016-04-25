@@ -20,3 +20,17 @@ I have no idea how to read whatever I can dissassemble...
 
 https://retdec.com/
 https://www.onlinedisassembler.com/odaweb/
+http://shadow-file.blogspot.co.za/2013/05/running-debian-mips-linux-in-qemu.html
+http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html
+http://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
+
+Learning a lot!
+
+looks like this is just an XOR cipher..
+
+wrote a simple simulator
+
+an example key that I chose to generate lowercase letters
+$ ./simulate b8F7d0A0a0E0h0A0
+payyriexwtzarqfttzctztdcfxzyvtnxxree
+

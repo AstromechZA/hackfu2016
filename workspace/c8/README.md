@@ -90,3 +90,37 @@ DC115_2015-11-01.jpg - 40.67693   ~ 41
 DC117_2015-10-01.jpg - 60.14361   ~ 60
 
 range == -23 -> 60 == 83
+
+-----------------------------------------------
+
+- file hashes
+
+MD5 (DC046_2015-12-01.jpg) = 1d6f26ab4ab2e4bc61724780b75e0ac7
+MD5 (DC097_2015-03-01.jpg) = 1857fab54ef27dbb68dc695a58d1b6f8
+MD5 (DC097_2015-06-01.jpg) = 88ad520be80221e6b6778561e4026406
+MD5 (DC099_2015-07-01.jpg) = 45855472ebda2956fe1665c3177a0502
+MD5 (DC100_2015-09-01.jpg) = cd14973bc4b1200f6d0fcf3273502677
+MD5 (DC105_2015-02-01.jpg) = 28e23231b9349ba58b99b1a86c16c0dc
+MD5 (DC105_2015-08-01.jpg) = 5246c9c5db81c1543d13d41277285402
+MD5 (DC105_2015-08-01-similar.jpg) = d7e9364efddb822554a7f787729b03c5
+MD5 (DC108_2015-05-01.jpg) = d8542816d65942f1ff061aec63ae55e9
+MD5 (DC109_2015-01-01.jpg) = e3e2dfa1ebefad101307f16d4f1a3a0a
+MD5 (DC112_2015-04-01.jpg) = d860c8df6ea8b56fae01eef612b894b3
+MD5 (DC115_2015-11-01.jpg) = 5b32d6f510e1dd82b1c99586ca45613d
+MD5 (DC117_2015-10-01.jpg) = 4657c80fd0f7314c8e0a1cbaa496934b
+
+- sizes
+
+-rw-r--r--  1 benmeier  staff   115K Feb 17 10:29 DC046_2015-12-01.jpg
+-rw-r--r--  1 benmeier  staff    73K Feb 17 10:10 DC097_2015-03-01.jpg
+-rw-r--r--  1 benmeier  staff    81K Feb 17 10:28 DC097_2015-06-01.jpg
+-rw-r--r--  1 benmeier  staff    95K Feb 17 10:24 DC099_2015-07-01.jpg
+-rw-r--r--  1 benmeier  staff   116K Feb 17 10:12 DC100_2015-09-01.jpg
+-rw-r--r--  1 benmeier  staff    67K Feb 17 10:24 DC105_2015-02-01.jpg
+-rw-r--r--@ 1 benmeier  staff    82K Apr 24 01:16 DC105_2015-08-01-similar.jpg
+-rw-r--r--  1 benmeier  staff   167K Feb 17 10:27 DC105_2015-08-01.jpg
+-rw-r--r--  1 benmeier  staff   107K Feb 17 10:28 DC108_2015-05-01.jpg
+-rw-r--r--  1 benmeier  staff    95K Feb 17 10:13 DC109_2015-01-01.jpg
+-rw-r--r--  1 benmeier  staff   124K Feb 17 10:30 DC112_2015-04-01.jpg
+-rw-r--r--  1 benmeier  staff   157K Feb 17 10:31 DC115_2015-11-01.jpg
+-rw-r--r--  1 benmeier  staff   144K Feb 17 10:26 DC117_2015-10-01.jpg

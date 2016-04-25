@@ -4,6 +4,7 @@ import (
     "fmt"
     "strings"
     "errors"
+    "os"
 )
 
 const uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -185,10 +186,25 @@ func CacheLetterPositions(grid *[][]string) *map[string]Pair {
     return &output
 }
 
+func ScoreItBasic(input string) float32 {
+    total := float32(0)
+    for _, r := range input {
+        if r >= 97 && r <= 126 {
+            total += 1
+        }
+    }
+    return total / float32(len(input))
+}
+
 func main() {
 
+    if len(os.Args) == 1 {
+        fmt.Println("please provide play fair key as first argument.")
+        os.Exit(1)
+    }
+
     grid := PlayFairGrid{}
-    grid.Build("miaplacidus●")
+    grid.Build(strings.TrimSpace(os.Args[1]))
     grid.Print()
 
     cipherText := "eFjdlwKgeFlscbApnQEsny3tnye0frxnlrQ5vliW3Yx=5Al●S1nT4obQHql●Ozl●KqeG5252"

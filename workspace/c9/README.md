@@ -1,5 +1,5 @@
 
-            writer      b1          b2          c
+date        writer      b1          b2          c
 2015-08-25  #canine     24.238149   26.942855   30.280603   If truly you seek to find your dear missing child, first calculate the fixed coefficients we've compiled
 2015-08-28  #vendetta                           -24.454848  We didn't want to do it, but we had no real choice, It was the only way, so sayeth our inner voice
 2015-09-03  #wicker     30.280603   -24.454848  -22.705681  Follow these clues and do not be distraught, use only a little bit of thought
@@ -32,3 +32,11 @@ y = b1*x1 + b2*x2 + c
 -27; 25; 27; -23; 28 added -> 30
 
 "forget the month and even the year" is the y value the day?
+
+kinda confused,
+
+- writer = b1x + b2y + c didn't show any common intersections or anything
+- day = b1x + b2y + c didn't show any common intersections either
+
+solving series of 3 simultaneous eqs for canine and exile yielded no common values
+pretty sure that means that they arent dependent on each other..
