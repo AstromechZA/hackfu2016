@@ -16,17 +16,22 @@ func main() {
 
     // first identify this file path
     thisFile, _ := filepath.Abs(os.Args[0])
-    inputBytes, _ := ioutil.ReadFile(filepath.Join(thisFile, "..", "input"))
+    inputBytes, _ := ioutil.ReadFile(filepath.Join(thisFile, "..", "messages.enc"))
     inputBytes = inputBytes[:len(inputBytes) - 1]
 
     keyBytes := os.Args[1]
+
+    output := make([]byte, len(inputBytes))
 
     for i, b := range inputBytes {
         k := keyBytes[i % 16]
         v := int32(b ^ k)
         v = v << 0x18
         v = v >> 0x18
-        fmt.Print(string(v))
+        output[i] = byte(v)
     }
+    fmt.Println("in", inputBytes)
+    fmt.Println("out", output)
+    fmt.Print(string(output))
     fmt.Print("\n\n")
 }
