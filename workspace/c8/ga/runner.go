@@ -316,7 +316,7 @@ func main() {
 
         } else {
             p := dF * temperature * temperature * temperature * temperature
-            r := rand.Float64()
+            r := rand.Float64() * 3
             if r < p {
                 parentPL = childPL
                 parentLP = childLP
