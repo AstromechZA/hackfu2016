@@ -158,7 +158,7 @@ func BuildSNGramScoringTransformAll(ngramsrcfile string, ngram int) func(*[]byte
         s := *src
         d := *dst
 
-        worstScore := float64(len(s) - ngram + 1) * ngramScoreMap[0]
+        worstScore := float64(len(s) - ngram) * ngramScoreMap[0]
 
         l := len(s)
         var p int16
@@ -194,7 +194,7 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
     lp := *letterToPos
     pl := *posToLetter
 
-    if rand.Float64() > 0.5 && temperature > 0.7 {
+    if rand.Float64() > 0.5 && temperature > 0.2 {
 
         newlp := make([]byte, len(lp))
         copy(newlp, lp)
@@ -219,7 +219,7 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
         lp = newlp
         pl = newpl
 
-    } else if rand.Float64() > 0.5 && temperature > 0.5 {
+    } else if rand.Float64() > 0.5 && temperature > 0.2 {
 
         newlp := make([]byte, len(lp))
         copy(newlp, lp)
@@ -242,7 +242,7 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
         lp = newlp
         pl = newpl
 
-    } else if rand.Float64() < temperature {
+    } else {
 
         newlp := make([]byte, len(lp))
         copy(newlp, lp)
@@ -264,23 +264,7 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
         pl = newpl
     }
 
-    newlp := make([]byte, len(lp))
-    copy(newlp, lp)
-    newpl := make([]byte, len(pl))
-    copy(newpl, pl)
-
-    p1 := byte(rand.Intn(64))
-    p2 := p1
-    for p1 == p2 {p2 = byte(rand.Intn(64))}
-
-    la := pl[p1]
-    lb := pl[p2]
-    newlp[lb] = p1
-    newlp[la] = p2
-    newpl[p1] = lb
-    newpl[p2] = la
-
-    return &newlp, &newpl
+    return &lp, &pl
 }
 
 func main() {
@@ -331,8 +315,8 @@ func main() {
             }
 
         } else {
-            p := temperature * temperature * temperature * temperature
-            r := rand.Float64() * 4
+            p := dF * temperature * temperature * temperature * temperature
+            r := rand.Float64()
             if r < p {
                 parentPL = childPL
                 parentLP = childLP
