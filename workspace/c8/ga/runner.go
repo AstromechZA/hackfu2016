@@ -135,7 +135,7 @@ func BuildSNGramScoringTransformAll(ngramsrcfile string, ngram int) func(*[]byte
             line := scanner.Text()
             var v int64
             for i := 0; i < ngram; i++ {
-                c := line[i] + 32
+                c := (line[i] + 32) & 0xff
                 v = v << 8
                 v = v + int64(c)
             }
@@ -158,35 +158,46 @@ func BuildSNGramScoringTransformAll(ngramsrcfile string, ngram int) func(*[]byte
         s := *src
         d := *dst
 
-        worstScore := float64(len(s) - ngram) * ngramScoreMap[0]
+        worstNGramScore := float64(len(s) - ngram + 1) * ngramScoreMap[0]
+        worstCaseScore := float64(len(s))
 
         l := len(s)
         var p int16
         var v int64
-        var score float64
+        var casescore float64
+        var ngramscore float64
         for i := 0; i < l; i+=2 {
             p = (int16(lp[s[i]]) << 6) | int16(lp[s[i+1]])
             p = (*transforms)[p]
             d[i] = pl[ (p >> 6) & 63 ]
             d[i+1] = pl[p & 63]
 
+            if d[i] > 96 && d[i] < 123 {
+                casescore += 1
+            }
+
+            if d[i + 1] > 96 && d[i + 1] < 123 {
+                casescore += 1
+            }
+
             if i >= ngram {
                 v = ((v & 0xffffffff) << 8) | int64(d[i])
                 s, ok := ngramScoreMap[v]
                 if !ok { s, ok = ngramScoreMap[0] }
-                score += s
+                ngramscore += s
             }
             if i+1 >= ngram {
                 v = ((v & 0xffffffff) << 8) | int64(d[i + 1])
                 s, ok := ngramScoreMap[v]
                 if !ok { s, ok = ngramScoreMap[0] }
-                score += s
+                ngramscore += s
             }
         }
 
-        result := score / worstScore
+        ns := (1 - (ngramscore / worstNGramScore))
+        cs := (casescore / worstCaseScore)
 
-        return result
+        return 0.8 * ns + 0.2 * cs
     }
 }
 
@@ -194,8 +205,9 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
     lp := *letterToPos
     pl := *posToLetter
 
-    if rand.Float64() > 0.5 && temperature > 0.2 {
+    r := rand.Intn(40)
 
+    if r == 1 {
         newlp := make([]byte, len(lp))
         copy(newlp, lp)
         newpl := make([]byte, len(pl))
@@ -215,17 +227,14 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
             newpl[p1 + i] = lb
             newpl[p2 + i] = la
         }
-
         lp = newlp
         pl = newpl
 
-    } else if rand.Float64() > 0.5 && temperature > 0.2 {
-
+    } else if r == 2 {
         newlp := make([]byte, len(lp))
         copy(newlp, lp)
         newpl := make([]byte, len(pl))
         copy(newpl, pl)
-
         p1 := byte(rand.Intn(8))
         p2 := p1
         for p1 == p2 {p2 = byte(rand.Intn(8))}
@@ -238,10 +247,62 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
             newpl[p1 + i] = lb
             newpl[p2 + i] = la
         }
-
         lp = newlp
         pl = newpl
-
+    } else if r == 3 {
+        newlp := make([]byte, len(lp))
+        copy(newlp, lp)
+        newpl := make([]byte, len(pl))
+        copy(newpl, pl)
+        var i byte
+        for i = 0; i < 64; i ++ {
+            p1 := i
+            p2 := (p1 & 56) | (7 - (p1 & 7))
+            la := pl[p1]
+            lb := pl[p2]
+            newlp[lb] = p1
+            newlp[la] = p2
+            newpl[p1] = lb
+            newpl[p2] = la
+        }
+        lp = newlp
+        pl = newpl
+    } else if r == 4 {
+        newlp := make([]byte, len(lp))
+        copy(newlp, lp)
+        newpl := make([]byte, len(pl))
+        copy(newpl, pl)
+        var i byte
+        for i = 0; i < 64; i ++ {
+            p1 := i
+            p2 := 63 - i
+            la := pl[p1]
+            lb := pl[p2]
+            newlp[lb] = p1
+            newlp[la] = p2
+            newpl[p1] = lb
+            newpl[p2] = la
+        }
+        lp = newlp
+        pl = newpl
+    } else if r == 5 {
+        newlp := make([]byte, len(lp))
+        copy(newlp, lp)
+        newpl := make([]byte, len(pl))
+        copy(newpl, pl)
+        var i byte
+        for i = 0; i < 64; i ++ {
+            p1 := i
+            p2 := (p1 & 7) | (56 - (p1 & 56))
+            la := pl[p1]
+            lb := pl[p2]
+            newlp[lb] = p1
+            newlp[la] = p2
+            newpl[p1] = lb
+            newpl[p2] = la
+        }
+        lp = newlp
+        pl = newpl
     } else {
 
         newlp := make([]byte, len(lp))
@@ -267,6 +328,8 @@ func DoArbitrarySwap(letterToPos *[]byte, posToLetter *[]byte, temperature float
     return &lp, &pl
 }
 
+
+
 func main() {
 
     rand.Seed(time.Now().UnixNano())
@@ -283,55 +346,56 @@ func main() {
     in := []byte("eFjdlwKgeFlscbApnQEsny3tnye0frxnlrQ5vliW3Yx=5Al.S1nT4obQHql.Ozl.KqeG5252")
     out := make([]byte, 72)
 
-    parentFitness := transformAllScoringFunc(&in, &out, parentLP, parentPL, tm)
-    childLP := parentLP
-    childPL := parentPL
-    childFitness := parentFitness
-
-    // many many rounds
-    rounds := 1000000
-    //temperature starts at 1 and tends to 0 in even steps
-    temperature := float64(1)
-    temperatureDrop := temperature / float64(rounds)
-    perc := rounds / 100
-
     bestSeen := ""
-    bestSeenFitness := float64(1)
+    bestSeenFitness := float64(0)
+    bestLP := parentLP
+    bestPL := parentPL
 
-    for i := rounds; i > 0; i-- {
-        childLP, childPL = DoArbitrarySwap(parentLP, parentPL, temperature)
-        // the lower the fitness, the better the score
-        childFitness = transformAllScoringFunc(&in, &out, childLP, childPL, tm)
-        dF := childFitness - parentFitness
-        // always swap if dF is negative (if childfitness < parentfitness)
-        if dF <= 0 {
-            parentPL = childPL
-            parentLP = childLP
-            parentFitness = childFitness
+    for {
+        parentFitness := transformAllScoringFunc(&in, &out, parentLP, parentPL, tm)
+        childLP := parentLP
+        childPL := parentPL
+        childFitness := parentFitness
 
-            if parentFitness < bestSeenFitness {
-                bestSeenFitness = parentFitness
-                bestSeen = string(out)
-            }
+        // many many rounds
+        rounds := 1000000
+        //temperature starts at 1 and tends to 0 in even steps
+        temperature := float64(1)
+        temperatureDrop := temperature * (1 + 3 * rand.Float64()) / float64(rounds)
 
-        } else {
-            p := dF * temperature * temperature * temperature * temperature
-            r := rand.Float64() * 3
-            if r < p {
+        for i := rounds; i > 0; i-- {
+            childLP, childPL = DoArbitrarySwap(parentLP, parentPL, temperature)
+            // the lower the fitness, the better the score
+            childFitness = transformAllScoringFunc(&in, &out, childLP, childPL, tm)
+            dF := childFitness - parentFitness
+            // always swap if dF is positive (if childfitness > parentfitness)
+            if dF > 0 {
                 parentPL = childPL
                 parentLP = childLP
                 parentFitness = childFitness
+
+                if parentFitness > bestSeenFitness {
+                    bestSeenFitness = parentFitness
+                    bestSeen = string(out)
+                    bestPL = parentPL
+                    bestLP = parentLP
+                    fmt.Println(bestSeenFitness, bestSeen)
+                }
+
+            } else if dF < 0 {
+                p := temperature * temperature * temperature * temperature
+                r := rand.Float64()
+                if r < p {
+                    parentPL = childPL
+                    parentLP = childLP
+                    parentFitness = childFitness
+                }
+            }
+            if temperature > 0.1 {
+                temperature -= temperatureDrop
             }
         }
-        if i % perc == 0 {
-            transformAllScoringFunc(&in, &out, parentLP, parentPL, tm)
-            fmt.Printf("%d %d - %f %s\n", int(float32(rounds - i) / float32(perc)), i, parentFitness, string(out))
-        }
-        temperature -= temperatureDrop
     }
-
-    transformAllScoringFunc(&in, &out, parentLP, parentPL, tm)
-    fmt.Println(parentFitness, string(out))
     fmt.Println(bestSeenFitness, bestSeen)
-
+    fmt.Println(bestPL, bestLP)
 }
