@@ -1,0 +1,53 @@
+
+2015-08-25:24.238149,26.942855 If truly you seek to find your dear missing child, first calculate the fixed coefficients we've compiled #canine:30.280603
+
+#canine
+y = 24.238149x + 26.942855z + 30.280603
+
+2015-09-03:30.280603,-24.454848 Follow these clues and do not be distraught, use only a little bit of thought #wicker:-22.705681
+
+#wicker
+y = 30.280603x + -24.454848z + -22.705681
+
+2015-09-16:-22.705681,28.833722 Multiple meanings from these messages could be derived, but only if you pay special attention to those I've contrived #exile:28.473445
+
+#exile
+y = -22.705681x + 28.833722z + 28.473445
+
+2015-09-29:28.473445,27.00094 We are all blessed with minutes, hours and days. Remember this, and you'll make the right plays #canine:30.638373
+
+#canine
+y = 28.473445x + 27.00094z + 30.638373
+
+2015-10-11:30.638373,28.381128 Winning this game requires some correlation, after that, it is a simple equation #vendetta:-25.984645
+
+#vendetta
+y = 30.638373x + 28.381128z + -25.984645
+
+2015-10-23:-25.984645,28.375873 All this suffering is means to our end, find the correct message and you will comprehend #vendetta:-24.902404
+
+#vendetta
+y = -25.984645x + 28.375873z + -24.902404
+
+2015-10-29:-24.902404,27.632648 106 92 131, these were the numbers picked by the picker, take a very careful look at the writer whose name rhymes with liquor #exile:29.645472
+
+#exile
+y = -24.902404x + 27.632648z + 29.645472
+
+2015-11-18:29.645472,-22.078782 Five, four, three, two, and you expected one, forget about that, the rhyme, she's now done #canine:29.647521
+
+#canine
+y = 29.645472x + -22.078782z + 29.647521
+
+2015-11-28:29.647521,28.998879 Hide and seek in this manner is a great lot of fun, 'tis a game we could all enjoy in the very long run #wicker:-20.449581
+
+#wicker
+y = 29.647521x + 28.998879z + -20.449581
+
+2015-12-19:-20.449581,28.382273 -27; 25; 27; -23; 28, add and subtract, this is something you need, take that as a fact #exile:28.73662
+
+#exile
+y = -20.449581x + 28.382273z + 28.73662
+
+
+canine x~~-0.084169,   y~~27.6424,   z~~-0.0221986
